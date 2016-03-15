@@ -1,0 +1,57 @@
+.border
+  height: 6px
+  border: 0
+  background-color: $highlight_1
+  background-image: linear-gradient(to right, $highlight_1, $highlight_1 25%, $highlight_2 25%, $highlight_2 50%, $highlight_3 50%, $highlight_3 75%, $highlight_4 75%, $highlight_4 100%, $highlight_4 100%)
+  background-size: 50% 100%
+
+.wrapper
+  width: 750px
+  max-width: 90%
+  margin: 0 auto
+
+.wrapper
+  .main_header
+    margin: 5em 0 4em
+    @media only screen and (max-width: 750px)
+      margin: 3em 0
+
+    .logo
+      @media only screen and (max-width: 750px)
+        text-align: center
+      img
+        width: 75px
+        float: left
+        @media only screen and (max-width: 750px)
+          float: none
+      h1
+        float: left
+        margin: 0 0 0 1em
+        text-transform: uppercase
+        color: $main
+        padding-top: 1.2em
+        font:
+          size: 1.35em
+          weight: 700
+        @media only screen and (max-width: 750px)
+          float: none
+          margin: 0
+          font-size: 1.1em
+
+    nav
+      float: right
+      padding-top: 1.75em
+      @media only screen and (max-width: 750px)
+        float: none
+        text-align: center
+      a
+        color: $secondary
+        margin-left: 1em
+        &:hover
+          color: $main
+        @media only screen and (max-width: 750px)
+          margin: 0 0.5em
+
+      .active
+        font-weight: 700
+        color: $main

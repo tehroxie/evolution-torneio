@@ -1,0 +1,147 @@
+.register
+  right: 0%
+  left: -200%
+  display: none
+  position: relative
+  max-width: 85%
+  margin: 0 auto
+  transition: all 0.3s ease-in-out
+  #register-form
+    display: block
+    margin: 0 auto
+    position: relative
+    input,
+    textarea
+      background: none
+      border: solid 2px #21a1e1
+      color: #21a1e1
+      padding: 15px 40px
+      font-size: 18px
+      display: inline-block
+      resize: none
+
+      &:focus,
+      &:active
+        outline: none
+
+      &[type="text"]
+        border: none
+        border-bottom: solid 2px #21a1e1
+
+      &[type="submit"]
+        &:active
+          color: white
+          background: #21a1e1
+
+    .row
+      .input-group
+        display: inline-block
+        margin: 20px
+        position: relative
+
+        input,
+        textarea
+          padding: 15px 0px
+
+        label
+          +position(absolute, 50% null null 0px)
+          +transform(translateY(-50%))
+          font:
+            family: $georgia
+            style: italic
+            size: 18px
+          color: #999
+          pointer-events: none
+          +transition
+
+        input:focus + label,
+        .has-value + label,
+        textarea:focus + label
+          top: -10px
+          font-size: 12px
+          padding-left: 0px
+          color: #aaa
+      .team-logo
+        float: left
+        max-width: 7.75em
+        @media only (max-width: 850px)
+          float: none
+          margin: 0 auto
+          display: block
+
+        #picture-input
+          display: none
+        #picture-label
+          font:
+            family: $georgia
+            style: italic
+            size: 18px
+          color: #999
+          display: block
+          border: dashed 2px $highlight_3
+          padding: 1.75em 1.5em
+          cursor: pointer
+          background: lighten($secondary, 35%)
+          text-align: center
+          +position(relative, 0px null null 0px)
+          +transform(translateY(0%))
+      .team-info
+        margin: 20px
+        display: flex
+        @media only (max-width: 850px)
+          display: block
+          margin: 0 auto
+        .input-group
+          @media only (max-width: 850px)
+            display: block
+          #name-input,
+          #name-label,
+          #abv-input,
+          #abv-label
+            @media only (max-width: 850px)
+              min-width: 100%
+              max-width: 100%
+              width: 100%
+        .input-group:last-child
+          #abv-input,
+          #abv-label
+            max-width: 8.3em
+
+      .members-list
+        display: flex
+        justify-content: space-around
+        @media only (max-width: 500px)
+          display: block
+          margin: 0 auto
+        .column
+          display: flex
+          flex-direction: column
+          @media only (max-width: 500px)
+            display: block
+            max-width: 100%
+            margin: 0 auto
+          .input-group
+            @media only (max-width: 850px)
+              display: block
+            #member-label,
+            #member-input
+              @media only (max-width: 850px)
+                min-width: 100%
+                max-width: 100%
+                width: 100%
+
+      .team-description
+        margin: 25px auto
+        display: block
+        max-width: 450px
+        #description-input
+          width: 92%
+          padding: 4%
+          height: 100px
+        #description-label
+          padding-left: 20px
+
+    #submit-button
+      margin: 40px auto 65px
+      transition: all 0.3s ease-in-out
+      display: block

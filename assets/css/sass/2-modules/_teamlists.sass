@@ -1,0 +1,78 @@
+#team-list
+  width: 100%
+  position: relative
+  list-style: none
+  padding: 0
+  transition: all 0.3s ease-in-out
+  a
+  .listing
+    background: $white
+    border: 1px solid $border
+    border-radius: 0.3em
+    padding: 1em
+    margin-bottom: 1em
+    position: relative
+    z-index: 1
+    display: table
+    width: auto
+    transition: all 0.3s ease-in-out
+    &:hover
+      box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1)
+    @media only screen and (max-width: 600px)
+      width: auto
+
+    img,
+    .info,
+    .ver_mais
+      display: table-cell
+      vertical-align: middle
+      font-size: 0.9em
+      color: $secondary
+
+    .image_wrapper
+      width: 80px
+      @media only screen and (max-width: 600px)
+        margin-right: 1em
+      img
+        +size(80px)
+        display: block
+        margin: 0 auto
+        border-radius: 0.25em
+        @media only screen and (max-width: 600px)
+          +size(60px)
+
+    .info
+      line-height: 1.5
+      width: 640px
+      padding-left: 25px
+      @media only screen and (max-width: 600px)
+        width: 100%
+        padding: 0.4em 0 0 0
+      .team_title
+        font-weight: 500
+        color: $main
+        font-size: 1.5em
+        @media only screen and (max-width: 600px)
+          font-size: 1.25em
+      .team_info
+        display: block
+
+    .ver_mais
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 0.75em
+      position: relative
+      white-space: nowrap
+      padding-top: 0.6em
+      width: 100px
+      color: $highlight_1
+      &:before
+        content: " "
+        background-color: $highlight_1
+        +size(10px)
+        border-radius: 100%
+        position: absolute
+        left: -20px
+        top: 38px
+      @media only screen and (max-width: 600px)
+        display: none

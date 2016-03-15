@@ -1,0 +1,45 @@
+.search
+  max-width: 900px
+  margin: -2.5em 0 3em
+  transition: all 0.3s ease-in-out
+  opacity: 0
+  height: 0
+  pointer-events: none
+
+  #search-form
+    margin: 0 auto
+    .input-group
+      display: block
+      margin: 0 auto
+      width: 75%
+      position: relative
+
+      #search-input
+        font-size: 18px
+        width: 100%
+        color: $highlight_3
+        background: none
+        border: none
+        padding: 15px 0
+        display: inline-block
+        border-bottom: solid 2px $highlight_3
+        &:focus,
+        &:active
+          outline: none
+
+      #search-input:focus + #search-label,
+      .has-value + #search-label
+        top: -10px
+        font-size: 12px
+      #search-label
+        +position(absolute, 50% null null 0px)
+        +transform(translateY(-50%))
+        font-style: italic
+        font-size: 18px
+        color: $secondary
+        transition: all 0.3s ease-in-out
+        pointer-events: none
+.search-active
+  opacity: 1
+  height: auto
+  pointer-events: auto

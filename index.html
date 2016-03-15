@@ -8,10 +8,204 @@
     <meta name="description" content="Site official da comunidade Evolution Gaming Portugal." />
     <meta name="author" content="João 'roxie' Soares" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <h1>Hello</h1>
+  <body ondragstart="return false">
+
+    <div class="border"></div>
+
+    <div class="wrapper">
+
+      <header class="main_header clearfix">
+
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="Evolution Logo" />
+          <h1>Evolution</h1>
+        </div>
+
+        <nav>
+          <a href="#" id="register">Registar</a>
+          <a href="#" id="search">Procurar</a>
+        </nav>
+
+      </header>
+
+      <section class="search">
+        <form id="search-form">
+          <div class="input-group">
+            <input type="text" id="search-input" />
+            <label id="search-label">Procurar</label>
+          </div>
+        </form>
+      </section>
+
+      <ul id="team-list">
+        <a href="#">
+          <li class="listing cleafix">
+
+            <div class="image_wrapper">
+              <img src="assets/img/virtuspro.jpg" alt="Virtus.Pro Logo">
+            </div>
+
+            <div class="info">
+              <span class="team_title">Virtus.Pro</span>
+              <span class="team_info">Uma equipa sueca profissional de CS:GO.</span>
+            </div>
+
+            <span class="ver_mais">Ver Mais</span>
+
+          </li>
+        </a>
+
+        <a href="#">
+          <li class="listing cleafix">
+
+            <div class="image_wrapper">
+              <img src="assets/img/fnatic.png" alt="Fnatic Logo">
+            </div>
+
+            <div class="info">
+              <span class="team_title">Fnatic</span>
+              <span class="team_info">Uma equipa americana profissional de CS:GO.</span>
+            </div>
+
+            <span class="ver_mais">Ver Mais</span>
+
+          </li>
+        </a>
+
+        <a href="#">
+          <li class="listing cleafix">
+
+            <div class="image_wrapper">
+              <img src="assets/img/ibuypower.jpg" alt="iBuyPower Logo">
+            </div>
+
+            <div class="info">
+              <span class="team_title">iBuyPower</span>
+              <span class="team_info">Uma equipa americana profissional de CS:GO.</span>
+            </div>
+
+            <span class="ver_mais">Ver Mais</span>
+
+          </li>
+        </a>
+
+        <a href="#">
+          <li class="listing cleafix">
+
+            <div class="image_wrapper">
+              <img src="assets/img/liquid.png" alt="Liquid Logo">
+            </div>
+
+            <div class="info">
+              <span class="team_title">Liquid</span>
+              <span class="team_info">Uma equipa americana profissional de CS:GO.</span>
+            </div>
+
+            <span class="ver_mais">Ver Mais</span>
+
+          </li>
+        </a>
+
+      </ul>
+
+      <section class="register">
+        <form id="register-form">
+           <div class="row clearfix">
+            <div class="input-group team-logo">
+              <input type="file" id="picture-input" accept="image/*">
+              <a href="#" id="picture-label">Enviar Logo</a>
+            </div>
+            <div class="team-info">
+              <div class="input-group">
+                <input type="text" id="name-input" />
+                <label id="name-label">Nome</label>
+              </div>
+              <div class="input-group">
+                <input type="text" id="abv-input" />
+                <label id="abv-label">Abreviatura</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="members-list">
+              <div class="column">
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="member-input" />
+                  <label id="member-label">Nome de Jogador</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group team-description">
+              <textarea id="description-input"></textarea>
+              <label id="description-label">Breve Descrição</label>
+            </div>
+          </div>
+          <input type="submit" value="Registar Equipa" id="submit-button" />
+        </form>
+      </section>
+
+    </div>
+
+    <div id="modal" class="modal-wrapper">
+
+        <div class="modal-content">
+
+          <div class="modal-header clearfix">
+            <div id="logo"><img src="assets/img/virtuspro.jpg" alt="Virtus.Pro Logo"></div>
+
+            <ul class="clearfix">
+              <li class="team-info"><p>Virtus.Pro<span>VP</span></p></li>
+              <li class="team-members">
+                <ul id="member-list">
+                  <div class="column">
+                    <li class="member-name">roxie</li>
+                    <li class="member-name">cl</li>
+                    <li class="member-name">oreo</li>
+                  </div>
+                  <div class="column">
+                    <li class="member-name">sss</li>
+                    <li class="member-name">genio</li>
+                    <li class="member-name">fox</li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <p class="team-description">A descricao da equipa para batatas lal lal lal la lal lal al lal l a</p>
+
+          <div class="modal-close"><p>Fechar</p></div>
+        </div>
+    </div>
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
   </body>
